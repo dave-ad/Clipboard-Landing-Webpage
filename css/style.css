@@ -1,0 +1,286 @@
+:root {
+  --white: rgb(255, 255, 255);
+  --strongcyan: rgb(38, 186, 164);
+  --lightblue: rgb(97, 115, 255);
+  --grey: rgb(247, 247, 247);
+  --grayishblue: rgb(159, 171, 178);
+  --dark-grayishblue: rgb(76, 84, 93);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Bai Jamjuree", sans-serif;
+  font-size: 18px;
+  color: var(--grayishblue);
+}
+
+/* SECTION CONTENT */
+.content {
+  width: 85%;
+  margin: auto;
+  text-align: center;
+}
+
+/* GENERAL STYLE */
+h1,
+h2 {
+  color: var(--dark-grayishblue);
+  margin-bottom: 5px;
+}
+
+p {
+  margin-bottom: 25px;
+}
+
+/* HEADER */
+header {
+  height: 365px;
+  width: 100%;
+  padding-top: 120px;
+  background: url(/clipboard-landing-page-master/images/bg-header-mobile.png)
+    no-repeat center;
+  background-size: cover;
+  /* text-align: center; */
+  margin-bottom: 10px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+/* DOWNLOAD SECTION  */
+/* DOWNLOAD BUTTONS */
+button {
+  display: grid;
+  border: none;
+  border-radius: 20px;
+  padding: 15px;
+  color: var(--white);
+  /* width: 150px; */
+  width: 100%;
+  /* margin: auto; */
+  margin: 20px 0;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+.iOS {
+  background-color: var(--strongcyan);
+}
+
+.MAC {
+  background-color: var(--lightblue);
+}
+
+/* TRACK SECTOIN  */
+#track img {
+  margin: 40px 0;
+  width: 100%;
+}
+
+/* CLIPBOARD SECTION */
+#accessclipboard img {
+  width: 100%;
+  margin: 30px 0;
+}
+
+/* SUPERCHARGE SECTION */
+.workflowitems img {
+  width: 60px;
+  height: 50px;
+}
+
+/* PARTNERS SECTION */
+.partnerslogo img {
+  margin: auto;
+  width: 60%;
+  margin: 40px 0;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--grey);
+  padding-top: 50px;
+}
+footer img {
+  width: 80px;
+  margin-bottom: 30px;
+}
+
+/* LINKS TO FAQ ETC.. */
+.links a {
+  padding: 10px 0;
+  color: rgb(134, 134, 134);
+  text-decoration: none;
+  display: grid;
+}
+
+/* LINKS TO SOCIAL MEDIA */
+.socials img {
+  margin: 20px;
+  width: 25px;
+  height: 25px;
+}
+
+@media screen and (min-width: 450px) {
+  /* GENERAL h1 STYLING */
+
+  h1 {
+    margin-top: 45px;
+    font-size: 150%;
+  }
+
+  /* HEADER */
+  header {
+    height: 330px;
+    width: 100%;
+    padding-top: 120px;
+    background: url(/clipboard-landing-page-master/images/bg-header-desktop.png)
+      no-repeat center;
+    background-size: cover;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  /* DOWNLOAD SECTION */
+  /*SECTON PARAGRAPGH */
+  #download p {
+    width: 520px;
+    margin: auto;
+  }
+
+  /* DOWNLOAD BUTTONS */
+  button {
+    width: 170px;
+    display: inline;
+    margin: 40px 10px;
+  }
+
+  /* DISPLAY CONTENT  */
+  .anticontent {
+    width: 100%;
+  }
+
+  /* TRACK SECTION */
+  #track img {
+    position: relative;
+    left: -40px;
+    width: 55%;
+    height: 550px;
+    float: left;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* CLEAR FLOAT */
+  #track::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* FLOAT DIV IN TRACK SECCTION */
+  .float {
+    height: 600px;
+    margin-top: 100px;
+  }
+
+  .text {
+    width: 25%;
+    text-align: left;
+    margin-top: 25px;
+    margin-left: 100px;
+    float: left;
+  }
+
+  .text > p {
+    margin-bottom: 70px;
+  }
+
+  /* CLIPBOARD SECTION */
+  #accessclipboard img {
+    width: 78%;
+    margin: 30px 0;
+  }
+
+  /* SUPERCHARGE SECTION */
+  .workflowcontent {
+    display: flex;
+    width: 75%;
+    padding-top: 50px;
+    margin: auto;
+  }
+
+  .workflowitems {
+    width: 33.3%;
+    height: 200px;
+  }
+
+  .workflowitems img {
+    width: 50px;
+    height: 40px;
+  }
+
+  /* PARTNERS SECTION */
+  .partnerslogo {
+    display: flex;
+  }
+  .partnerslogo img {
+    width: 15%;
+    height: 50px;
+    margin: 35px;
+  }
+
+  /* FOOTER */
+  footer {
+    height: 150px;
+    padding-top: 40px;
+  }
+
+  .footcontent {
+    display: flex;
+    /* text-align: left; */
+  }
+
+  footer img {
+    width: 55px;
+    height: 55px;
+    margin-left: 25px;
+  }
+
+  /* LINKS TO FAQ ETC.. */
+  .links {
+    width: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+  }
+
+  .links a {
+    margin-right: 50px;
+    padding: 0 20px;
+
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  /* LINKS TO SOCIAL MEDIA */
+  .socials {
+    position: absolute;
+    right: 100px;
+  }
+
+  .socials img {
+    margin-right: 7px;
+    width: 25px;
+    height: 25px;
+  }
+}
